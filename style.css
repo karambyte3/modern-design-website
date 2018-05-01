@@ -29,7 +29,7 @@ header {
 
 nav .menu {
     float: right;
-    position: relative;
+    /* position: relative; */
     margin-top: 40px;
     margin-right: 100px;
 }
@@ -55,7 +55,6 @@ nav .menu {
     border-bottom: 3px solid #4ECCA3;
     transition:none;
     transition: 0.1s ease-in-out;
-    
 }
 
 .container1 {
@@ -115,4 +114,65 @@ footer {
 
 footer p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        height: 300px;
+    }
+
+    .logo {
+        margin: auto;
+        max-width: 180px;
+    }
+
+    .logo img{
+        position: unset;
+        margin: 10px  0px 0px 0px;
+        float: none;
+    }
+
+    nav {
+        margin: auto;
+        max-width: 180px;
+        text-align: center;
+    }
+
+    nav .menu {
+        margin-top: 10px;
+        padding: 10px 0;
+        float: none;
+        /* border-left: 3px solid #4ECCA3; */
+        /* border-right: 3px solid #4ECCA3; */
+        width: 175px;
+    }
+
+    nav .menu ul {
+        margin: 0 auto;
+        
+    }
+
+    nav .menu a{
+        display: block;
+        line-height: 150%;
+    }
+
+    .logo img:hover{
+        transform: unset;
+    }
+
+    .menu a:hover {
+        border-bottom: 0; 
+        color: #4ECCA3;    
+        transition: 0.2s;    
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .container1 p {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 20px;
+    }
 }
